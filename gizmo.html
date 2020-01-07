@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>jasper.jia</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Serif+Pro&display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+      <meta name="description" content="Jasper, an independent digital creative providing services such as photography, web design & development, logo design, brand identity and more! He is currently based in London and Melbourne, Australia and looking to work with people from all kinds of industries. Hit him up to grab a coffee and create something special together!" />
+      <meta name="keywords" content="freelance. London. melbourne australia. photographer. web design. web development. frontend development. logo design.graphics design. brand identity. SEO. digital solution. digital designer. illustrator." />
+</head>
+
+<body>
+   <div class="logo "><a href="work.html" class="reveal-mobile">⏎</a><a href="index.html"><img id="logo" src="img/logo.png"/></a></div>
+    <div class="nav grid-left hidden-mobile">
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Works</a></li>
+          <li class="second"><a href="gizmo.html" id="active">NIKU - Gizmo</a></li>
+        <li><a href="photo.html">Photography</a></li>
+    </div>
+
+    <div class="social">
+        <li><a href="https://instagram.com/jasperfool/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jasperjia/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="mailto:jasperfool110@gmail.com" target="_blank"><i class="fas fa-envelope-open"></i></a></li>
+        </div>
+
+    <div class="grid-right">
+
+        <div class="gizmo">
+
+          <div class="intro">
+            <header><b>NIKU</b></header>
+            <h2>Physical Computing | Prototyping | Resin | Mechatronics | Object Detection</h2>
+            <br/>
+            <div class="left-align"><p1>NIKU (ニク) is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop. Through this mildly annoying yet loving interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.</p1></div><br/>
+            <img class="scroll" src="img/gizmo-1.jpg">
+          </div>
+
+          <hr>
+
+          <div class="process">
+            <h3>Process</h3>
+            <div class="left-align">
+              <p1>The initial concept was to create a soft robotic that is sticky and always latching on human foot. However, this concept was rather unrealistic due to the time contraints (3 weeks).</p1><br/><br/>
+              <p1>Instead of diving into soft robotics (which is a difficult task for a 3-week project), a soft outter shell with electronic internal hardware is sufficient to achieve our desired behaviours on the robot.</p1><br/><br/>
+            </div>
+            <img class="scroll" src="img/gizmo-moodboard.jpg"><br/><sub>Moodboard at concept stage</sub><br/><br/><br/>
+
+            <div class="left-align">
+              <p1>Hence, NIKU's form design and internal hardware engineering were revolved around three key behaviours that we narrowed down to - clumsy, clingy and annoying.</p1><br/><br/>
+              <p1>We made a lot of rapid prototypes to test out different sensors (IR, Ultrasonic, Thermal) and to experiment with a variety of moving mechanics (vibration, airflow, 2WD, 3WD, 4WD). We were also concurrently testing out different orientations for the physical appearance of the robot.</p1><br/><br/>
+            </div><br/>
+            <img class="scroll" src="img/gizmo-exp.jpg"><br/>
+            <sub>Rapid and efficient experiments on moving mechanics and forms</sub><br/><br/><br/>
+
+            <div class="left-align">
+              <p1>After lots of rapid prototyping and iterations, we decided to drive Niku with the following setup.</p1><br/><br/>
+              <p1>Internal hardware wise, our requiements are simple: compact, minimal and it MUST WORK on demo day.</p1><br/><br/>
+            </div><br/>
+            <img class="scroll" src="img/gizmo-hardware-iteration.jpg"><br/><sub>Work-like prototypes by hacking toys (lots of tear-down and soldering work)</sub><br/><br/><br/>
+
+            <div class="left-align">
+              <p1>*insert notepad for final design*</p1><br/><br/>
+            </div><br/>
+            <img class="scroll" src="img/niku-final-design.jpg"><br/><sub>NIKU final design + render</sub><br/><br/><br/>
+
+            <img class="scroll" src="img/niku-resin.jpg"><br/><sub>Making silicone casing with 3D printed mold</sub><br/><br/><br/>
+            <img class="scroll" src="img/gizmo-integration.jpg"><br/><sub>Hardware integration and final output</sub><br/><br/><br/>
+          </div>
+
+          <hr>
+
+          <div class="mechanism">
+            <h3>Mechatronics</h3>
+
+            <div class="left-align">
+              <p1>NIKU's movement is dependent on the proximity reading from its eyes (an ultrasonic sensor). The void loop () logics are as follows ↓ </p1>
+              <br/><br/>
+              <p1>• If the distance reading > 80cm, arduino sends PWM output to the left DC motor to drive left wheel foward - NIKU rotates to the right to search for targets around it.</p1>
+              <br/>
+              <p1>• If the distance reading < 80cm but > 5cm,  arduino sends alternating PWM signals to 2 DC wheels - NIKU moves forward with one wheel driving forward at a time.</p1>
+              <br>
+              <p1>• If the reading < 5cm, arduino first sends forward signals to drive both DC motors forward and then sends reverse signals to both - NIKU charges forward and then reverse.</p1>
+              <br/>
+            </div><br/><br/>
+
+            <img class="scroll" src="img/gizmo-2.jpg"><br/>
+
+            <img class="scroll" src="img/gizmo-gif-1.gif"><br/><sub>NIKU moves towards target</sub><br/><br/>
+            <img class="scroll" src="img/gizmo-gif-2.gif"><br/><sub>NIKU headbutts target and reverses</sub><br/><br/>
+            <img class="scroll" src="img/gizmo-gif-3.gif"><br/><sub>NIKU and I doing live demo</sub>
+          </div>
+
+          <hr>
+
+          <div class="furtherdev">
+            <h3>Further Development</h3>
+          </div>
+
+        </div>
+
+    <script type="text/javascript">
+            window.sr = ScrollReveal();
+            sr.reveal('.scroll');
+    </script>
+
+    <footer>designed & coded by jasper.jia @2019</footer>
+    </div>
+
+</body>
+
+
+</html>

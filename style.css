@@ -377,6 +377,10 @@ footer{
           max-width: 95vw;
         }
 
+      iframe{
+          max-width: 95vw;
+      }
+
     .work{
     padding-top: 10px;
   }

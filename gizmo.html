@@ -41,13 +41,14 @@
 
           <div class="intro">
             <header><b>NIKU</b></header>
-            <h2>Physical Computing | Prototyping | Resin | Mechatronics | Object Detection</h2>
-            <br/>
-            <div class="left-align"><p1>NIKU (ニク) is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop. It has a soft white body made of silicone which resembles a juicy and meaty bun - hence the name NIKU(ニク: meat in Japanese).</p1><br/><br/>
-              <p1>NIKU was created with my group mate Kiwa for a 3-week physical computing project at MSc/MA Innovation Design Engineering (Imperical College and Royal College of Art) where we were prompted to make a playful object that interacts with human.</p1><br/>
-              <p1></p1><br/><br/>
+            <h3>Arduino | Prototyping | Resin | 3D Printing | Object Detection</h3>
+            <h2>NIKU (ニク) is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.</h2>
+
+            <img class="scroll" src="img/gizmo/gizmo-1.jpg"><br/><sub>Through NIKU's playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.</sub><br/><br/>
+            <div class="left-align">
+              <p1>NIKU was a 3-week physical computing project at MSc/MA Innovation Design Engineering where we were prompted to make a playful object that interacts with human. NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU(ニク: meat in Japanese).</p1><br/>
             </div>
-            <img class="scroll" src="img/gizmo/gizmo-1.jpg"><br/><sub>Through NIKU's mildly annoying yet loving interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.</sub><br/><br/>
+
           </div>
 
           <hr>
@@ -55,7 +56,7 @@
           <div class="mechanism">
             <h3>Mechatronics</h3>
               <div class="left-align">
-                <p1>NIKU's movements are driven by 2 wheels controlled by 2 DC motors respectively and it performs different movements accordingly to the proximity reading from its eyes (an ultrasonic sensor).</p1><br/>
+                <p1>NIKU moves with 2 wheels and they are controlled by 2 DC motors respectively. The arduino board inside of NIKU receives proximity readings from its eyes, an ultrasonic sensor, and then commands the motors to performs different movements accordingly.</p1><br/>
 
               </div>
               <img class="scroll" src="img/gizmo/gizmo-2.jpg"><br/>
@@ -63,11 +64,11 @@
               <div class="left-align">
                 <p1>The void loop () logics are as follows ↓ </p1>
                 <br/><br/>
-                <p1>• If the distance reading > 80cm, arduino sends PWM output to the left DC motor to drive left wheel foward - NIKU rotates to the right to search for targets around it.</p1>
+                <p1>• If the reading <b>> 80cm</b>: <b>NIKU rotates to the right to search for targets around it </b>(arduino sends PWM output to the left DC motor to drive left wheel foward).</p1>
                 <br/>
-                <p1>• If the distance reading < 80cm but > 5cm,  arduino sends alternating PWM signals to 2 DC wheels - NIKU moves forward with one wheel driving forward at a time.</p1>
+                <p1>• If the reading <b>< 80cm but > 5cm</b>: <b>NIKU moves forward with one wheel driving forward at a time</b> (arduino sends alternating PWM signals to 2 DC wheels).</p1>
                 <br>
-                <p1>• If the reading < 5cm, arduino first sends forward signals to drive both DC motors forward and then sends reverse signals to both - NIKU charges forward and then reverse.</p1>
+                <p1>• If the reading <b>< 5cm</b>: <b>NIKU charges forward and then reverse</b> (arduino first sends forward signals to drive both DC motors forward and then sends reverse signals to both).</p1>
                 <br/>
               </div><br/>
               <img class="scroll" src="img/gizmo/gizmo-gif.gif"><br/><sub>NIKU rotates to search for target</sub><br/><br/>

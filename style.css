@@ -150,7 +150,7 @@ body{
 }
 
 .gizmo img{
-  max-width: 45vw;
+  max-width: 50vw;
 }
 
 .intro{
@@ -163,12 +163,13 @@ body{
 }
 
 .intro h2{
-  color: grey;
-  font-size: 15px;
+  font-family: 'Source Serif Pro', serif;
 }
 
 .intro h3{
-  text-align: center;
+  color: grey;
+  opacity: 0.6;
+  font-size: 15px;
 }
 
 .left-align {

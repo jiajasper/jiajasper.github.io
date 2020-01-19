@@ -6,12 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>jasper.jia</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style-gizmo.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Serif+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
       <meta name="description" content="Jasper, an independent digital creative providing services such as photography, web design & development, logo design, brand identity and more! He is currently based in London and Melbourne, Australia and looking to work with people from all kinds of industries. Hit him up to grab a coffee and create something special together!" />
@@ -37,124 +38,122 @@
 
     <div class="grid-right">
 
-        <div class="gizmo">
+      <div class="intro">
+          <header><b>NIKU</b></header>
+          <sub>3-week Physical Computing Project @idecourse</sub><br/>
+          <sub>Arduino | Prototyping | Resin | 3D Printing | Object Detection</sub>
+          <h2>NIKU (ニク) is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.</h2>
 
-          <div class="intro">
-            <header><b>NIKU</b></header>
-            <h3>Arduino | Prototyping | Resin | 3D Printing | Object Detection</h3>
-            <h2>NIKU (ニク) is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.</h2>
-
-            <img class="scroll" src="img/gizmo/gizmo-1.jpg"><br/><sub>Through NIKU's playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.</sub><br/><br/>
-            <div class="left-align">
-              <p1>NIKU was a 3-week physical computing project at MSc/MA Innovation Design Engineering where we were prompted to make a playful object that interacts with human. NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU(ニク: meat in Japanese).</p1><br/>
-            </div>
-
+          <a href="img/gizmo/gizmo-1.jpg" data-lightbox="image-1"><img class="scroll" src="img/gizmo/gizmo-1.jpg"></a><br/><br/>
+          <div class="left-align">
+            <p1>NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU(ニク: meat in Japanese). Through NIKU's playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.</p1><br/>
           </div>
 
-          <hr>
+        </div>
 
-          <div class="mechanism">
-            <h3>Mechatronics</h3>
-              <div class="left-align">
-                <p1>NIKU moves with 2 wheels and they are controlled by 2 DC motors respectively. The arduino board inside of NIKU receives proximity readings from its eyes, an ultrasonic sensor, and then commands the motors to performs different movements accordingly.</p1><br/>
+      <hr>
 
-              </div>
-              <img class="scroll" src="img/gizmo/gizmo-2.jpg"><br/>
+      <div class="dynamic">
 
-              <div class="left-align">
-                <p1>The void loop () logics are as follows ↓ </p1>
-                <br/><br/>
-                <p1>• If the reading <b>> 80cm</b>: <b>NIKU rotates to the right to search for targets around it </b>(arduino sends PWM output to the left DC motor to drive left wheel foward).</p1>
-                <br/>
-                <p1>• If the reading <b>< 80cm but > 5cm</b>: <b>NIKU moves forward with one wheel driving forward at a time</b> (arduino sends alternating PWM signals to 2 DC wheels).</p1>
-                <br>
-                <p1>• If the reading <b>< 5cm</b>: <b>NIKU charges forward and then reverse</b> (arduino first sends forward signals to drive both DC motors forward and then sends reverse signals to both).</p1>
-                <br/>
-              </div><br/>
-              <img class="scroll" src="img/gizmo/gizmo-gif.gif"><br/><sub>NIKU rotates to search for target</sub><br/><br/>
-              <img class="scroll" src="img/gizmo/gizmo-gif-1.gif"><br/><sub>NIKU moves towards target</sub><br/><br/>
-              <img class="scroll" src="img/gizmo/gizmo-gif-2.gif"><br/><sub>NIKU headbutts target and reverses</sub><br/>
-          </div>
+        <div class="item1">
 
-          <hr>
+                    <h3>Mechatronics</h3>
+                    <div class="left-align">
+                      <p1>The void loop () logics are as follows ↓ </p1>
+                      <br/><br/>
+                      <p1>• Distance reading > 80cm: NIKU rotates to the right to search for targets around it.</p1>
+                      <br/>
 
-          <div class="process">
-            <h3>Process</h3>
-            <div class="left-align">
-              <p1>The main challenges we faced throughout this project was to concurrently achieve and integrate desired form(resin and 3D printing) and mechatronics. Also, a tight time frame meant that we had to make compromises and prioritizations. </p1><br/><br/>
-            </div>
-            <div class="left-align">
-              <p1>The initial concept was to create a soft robotic that is sluggish and latches on human foot. However, this concept was rather unrealistic due to the time contraints.</p1><br/>
-              <p1>Instead of diving into soft robotics (which is a difficult task for a 3-week project), a soft outter shell with electronic internal hardware is sufficient to achieve our desired behaviours on the robot.</p1><br/><br/>
-            </div>
-            <img class="scroll" src="img/gizmo/gizmo-moodboard.jpg"><br/><sub>Moodboard at concept stage</sub><br/><br/><br/>
+                      <p1>• Distance reading < 80cm but > 5cm: NIKU moves forward with one wheel driving forward at a time.</p1>
+                      <br>
 
-            <div class="left-align">
-              <p1>Hence, NIKU's form design and internal hardware engineering were revolved around three key behaviours that we narrowed down to - clumsy, clingy and annoying.</p1><br/>
-              <p1>We made rapid prototypes to test out different sensors (IR, Ultrasonic, Thermal) and to experiment with a variety of moving mechanics (vibration, airflow, 2WD, 3WD, 4WD). We also concurrently tested out different orientations for the physical appearance of the robot.</p1><br/><br/>
-            </div><br/>
+                      <p1>• Distance reading < 5cm: NIKU charges forward and then reverse.</p1>
+                      <br/>
 
-            <img class="scroll" style="width:0.3;" src="img/gizmo/gizmo-gif-4.gif"><br/>
-            <img class="scroll" style="width:0.3;" src="img/gizmo/gizmo-gif-5.gif"><br/>
-            <img class="scroll" src="img/gizmo/gizmo-exp.jpg"><br/>
-            <sub>Rapid and efficient experiments on moving mechanics and forms</sub><br/><br/><br/>
-
-            <div class="left-align">
-              <p1>After lots of rapid prototyping and iterations, we decided to drive NIKU with the following setup and made work-like prototypes to test out form factors and functionalities (arduino codes).</p1><br/><br/>
-
-              <p1><b>• Dome-shaped silicone soft case:</b> To give the robot a soft and squishy look. It also provides enough space to hide the internal hardware for a clean and minimal look.</p1>
-              <br/>
-              <p1><b>• 3D printed dome-shaped hard case and base plate:</b> The hard case helps to maintain the dome shape (since our silicone is too soft) and the base plate is there to host all internal electronic parts.</p1>
-              <br/>
-              <p1><b>• 1 Arduino:</b> The brain of the robot.</p1>
-              <br/>
-              <p1><b>• 2 DC motors attached to 2 3D printed wheels seperately:</b> This allows NIKU to move on a left-right-left-right rythm which creates the clumsy character; it also enables NIKU to change directions without the need for a servo motor. </p1>
-              <br>
-              <p1><b>• 1 Ultrasonic sensor:</b> Less of a chance to be distracted by environment unlike IR sensor and sound sensor - great for live demonstration. </p1>
-              <br/>
-              <p1><b>• 1 Motor H-bridge:</b> To control the speed and direction of the DC motors.</p1>
-              <br/>
-              <p1><b>• 1 Ball pen tip:</b> This surprised a lot of people. Essentially, the ball pen tip acts as a free rolling wheel at the front. </p1>
-              <br/><br/>
-
-
-            </div><br/>
-            <img class="scroll" src="img/gizmo/gizmo-hardware-iteration.jpg"><br/><sub>To test out hardwares and codes, we teared down a toy 3WD car and soldered our own parts onto it for a rapid work-like prototype</sub><br/><br/><br/>
-
-            <div class="left-align">
-              <p1>We then finalised on the internal hardware and the exterior design; and started 3D printing the mold (for the silicone case) and the exterior casing.</p1><br/><br/>
-            </div><br/>
-            <img class="scroll" src="img/gizmo/niku-final-design.jpg"><br/><sub>NIKU mechatronics and parametric design + digital render</sub><br/><br/><br/>
-
-            <img class="scroll" src="img/gizmo/gizmo-making.jpg"><br/><sub>Silicone making with 3D printed mold and hardware assembly</sub><br/><br/><br/>
-
-
-            <img class="scroll" src="img/gizmo/gizmo-integration.jpg"><br/><sub>Final output</sub><br/><br/><br/>
-            <div class="left-align">
-              <p1>For a 3-week project, we were happy that NIKU was able to achieve all the key functionalities and movements.  The live demo was successful - everyone loved NIKU!</p1><br/><br/>
-            </div>
-              <img class="scroll" src="img/gizmo/gizmo-gif-3.gif"><br/><sub>NIKU and I doing live demo</sub><br/><br/>
-            <div class="left-align">
-              <p1> However, since we really wanted NIKU to be chasing human foot exclusively (as of right now, it reads any obstacle detected), we needed to add computer vision. Hence, we decided to make further development where we replaced the arduino board with a more powerful Raspberry Pi to run Tensorflow. Stay tuned for the update!</p1><br/><br/>
-            </div>
-
-          </div>
-
-          <hr>
-
-          <!--div class="furtherdev">
-            <h3>Further Development</h3>
-          </div-->
-
-          <a href="work.html" style="text-decoration:none;color:black;font-size:13px;">⏎ Check out other projects</a>
+                    </div><br/>
         </div>
 
 
+        <div class="item2">
+            <a href="img/gizmo/gizmo-gif-1.gif" data-lightbox="image-2"><img class="scroll" src="img/gizmo/gizmo-gif-1.gif"></a><br/>
+            <a href="img/gizmo/gizmo-gif-2.gif" data-lightbox="image-3"><img class="scroll" src="img/gizmo/gizmo-gif-2.gif"></a>
+          <hr>
+        </div>
+
+        <div class="item3">
+          <h3>Experiment</h3>
+          <div class="left-align">
+            <p1>NIKU's form design and internal hardware engineering were revolved around three key behaviours that we narrowed down to - clumsy, clingy and annoying.<br/><br/>
+                We made rapid prototypes to test out different sensors (IR, Ultrasonic, Thermal) and to experiment with a variety of moving mechanics (vibration, airflow, 2WD, 3WD, 4WD). We also concurrently tested out different orientations for the physical appearance of the robot.</p1><br/><br/>
+          </div>
+        </div>
+
+
+        <div class="item4">
+            <a href="img/gizmo/gizmo-exp.jpg" data-lightbox="image-4"><img class="scroll" src="img/gizmo/gizmo-exp.jpg"></a><br/><sub>Rapid and efficient experiments on moving mechanics and forms</sub>
+            <hr>
+        </div>
+
+
+        <div class="item5">
+          <h3>Prototype</h3>
+          <div class="left-align">
+            <p1>We decided to drive NIKU with the following setup:</p1><br/><br/>
+            <p1>• Dome-shaped silicone soft case<br/>
+            <p1>• 3D printed dome-shaped hard case and base plate<br/>
+            <p1>• 1 Arduino<br/>
+            <p1>• 2 DC motors attached to 2 3D printed wheels seperately<br/>
+            <p1>• 1 Ultrasonic sensor<br/>
+            <p1>• 1 Motor H-bridge<br/>
+            <p1>• 1 Ball pen tip<br/>
+              <br/>
+          </div>
+        </div>
+
+
+        <div class="item6">
+          <a href="img/gizmo/gizmo-hardware-iteration.jpg" data-lightbox="image-5"><img class="scroll" src="img/gizmo/gizmo-hardware-iteration.jpg"></a><br/><sub>We teared down a toy 3WD car and soldered our own parts onto it for a rapid working prototype</sub><br/>
+          <hr>
+        </div>
+
+
+        <div class="item7">
+          <h3>3D Printing + Resin + Assembly</h3>
+          <div class="left-align">
+            <p1>We then finalised on the internal hardware and the exterior design; and 3D printed the mold (for the silicone case) and the exterior casing.</p1><br/><br/>
+          </div><br/>
+        </div>
+
+        <div class="item8">
+
+          <!--a href="img/gizmo/niku-final-design.jpg" data-lightbox="image-6"><img class="scroll" src="img/gizmo/niku-final-design.jpg"></a><br/><sub>NIKU mechatronics and parametric design + digital render</sub><br/-->
+          <a href="img/gizmo/gizmo-making.jpg" data-lightbox="image-7"><img class="scroll" src="img/gizmo/gizmo-making.jpg"></a><br/><sub>Silicone making with 3D printed mold and hardware assembly</sub><br/>
+          <hr>
+        </div>
+
+
+      </div>
+
+      <div class="outro">
+        <img class="scroll" style="align-items: center;"src="img/gizmo/gizmo-gif-3.gif"><br/><sub>The live demo was a big success - everyone loved NIKU!</sub><br/><br/>
+      </div>
+      <hr>
+      <a href="work.html" style="text-decoration:none; color:black; font-size:13px; text-align:center !important;">⏎ Check out other projects</a>
     </div>
 
     <script type="text/javascript">
             window.sr = ScrollReveal();
             sr.reveal('.scroll');
+    </script>
+
+    <script src="lightbox-plus-jquery.js"></script>
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'fitImagesInViewport':true,
+      })
     </script>
 
     <footer>designed & coded by jasper.jia @2020</footer>

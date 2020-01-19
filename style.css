@@ -1,6 +1,6 @@
 html{
     width:100%vw;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 
 }
 
@@ -52,12 +52,12 @@ body{
     float: right;
     max-width:70%vw;
     height: 100%vh;
-    padding: 0 30px 0 30px;
+    padding:10vh;
     grid-area: content;
     overflow: hidden;
     display: grid;
     grid-template-areas:
-        "dynamic";
+        "dynamic"
 }
 
 #logo{
@@ -120,6 +120,7 @@ body{
     display: table-cell;
     text-align: center;
     bottom:30%;
+    margin-bottom: 2vh;
 
 }
 
@@ -154,12 +155,12 @@ body{
 }
 
 .intro{
-  margin-top:6vh;
   text-align: center;
 }
 
 .intro header{
   font-size: 30px;
+  margin-top:2vh;
 }
 
 .intro h2{
@@ -210,15 +211,12 @@ body{
   margin: -10px 0px 20px 0px;
 }
 
-.work{
-    padding-top: 60px;
-}
 
 .work img{
     max-height: 100%vh;
     max-width: 100%vw;
-    width:300px;
-    margin: 20px 30px 5px 30px;
+    width:350px;
+
 }
 
 
@@ -342,6 +340,8 @@ footer{
         margin-bottom: 50px;
         grid-area: content;
         padding: 0;
+        grid-template-areas:
+        "dynamic";
     }
 
     .left-align {
@@ -390,7 +390,7 @@ footer{
     max-width: 100%vw;
     width:300px;
     margin: 0;
-    padding-top: 20px;
+
 }
 
 .about{

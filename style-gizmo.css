@@ -1,6 +1,7 @@
 html{
     width:100%vw;
     font-family: 'Roboto', sans-serif;
+    kerning:normal;
 
   }
 
@@ -73,10 +74,11 @@ html{
   .nav{
     text-decoration: none;
     list-style-type: none;
-    font-size: 15px;
+    font-size: 13px;
     max-width: 10%vw;
     top:25%;
     position: fixed;
+
 
   }
   .nav li{
@@ -127,7 +129,7 @@ html{
 
 
   .about{
-  margin:10vh 0 0 25vw;
+  margin:5vh 0 0 10vw;
   text-align: left;
   }
 
@@ -208,8 +210,8 @@ html{
 
 .intro p1{
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 25px;
 
 }
 
@@ -240,8 +242,8 @@ font-size: 13px;
 
 .left-align {
   text-align: left !important;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   max-width: 70vw;
 }
 
@@ -258,20 +260,20 @@ font-size: 13px;
       ;
     padding-top: 5vh;
     font-family: 'Raleway', sans-serif;
-    line-height: 26px;
+    line-height: 23px;
     vertical-align: middle;
 
   }
 
 .dynamic p1{
   font-weight:100;
+  font-size: 13px;
 }
 
   .dynamic h3 {
     font-family: 'Roboto', sans-serif !important;
-    text-transform: uppercase;
     font-weight: lighter;
-    font-size: 28;
+    font-size: 25px;
 
     }
 
@@ -349,6 +351,15 @@ font-size: 13px;
     text-align: center;
     padding-top: 5vh;
   }
+
+
+    .outro h3 {
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: lighter;
+      font-size: 25px;
+
+      }
+
 
   .outro sub{
     font-size: 10px;
@@ -504,7 +515,7 @@ font-size: 13px;
     }
 
     .intro img{
-      max-width: 90vw;
+      max-width: 95vw;
     }
     .dynamic {
         display: grid;
@@ -527,7 +538,7 @@ font-size: 13px;
       }
 
       .dynamic img{
-          max-width: 60vw;
+          max-width: 95vw;
       }
 
       .intro sub{
@@ -539,6 +550,13 @@ font-size: 13px;
 
       .dynamic *{
         padding-top: 0;
+      }
+
+      .left-align {
+        text-align: left !important;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        max-width: 80vw;
       }
 
 }

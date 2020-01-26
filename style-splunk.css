@@ -189,9 +189,9 @@ html{
     right:10px;
     text-decoration: none;
     list-style-type: none;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
 
@@ -513,7 +513,7 @@ font-size: 13px;
     }
 
     footer{
-        font-size: 9px;
+        font-size: 11px;
         opacity: 0.6;
     }
 

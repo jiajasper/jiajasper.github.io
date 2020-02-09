@@ -347,8 +347,8 @@ footer{
           max-width: 95vw;
         }
 
-      iframe{
-          max-width: 95vw;
+      .photo iframe{
+          max-width: 50vw;
       }
 
     .work{

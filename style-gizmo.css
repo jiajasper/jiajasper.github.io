@@ -270,6 +270,8 @@ font-size: 13px;
   font-size: 13px;
 }
 
+
+
   .dynamic h3 {
     font-family: 'Roboto', sans-serif !important;
     font-weight: lighter;
@@ -352,6 +354,16 @@ font-size: 13px;
     padding-top: 5vh;
   }
 
+
+  .outro p1{
+    font-weight:100;
+    font-size: 13px;
+  }
+
+.outro #show{
+width:50vw;
+
+}
 
     .outro h3 {
       font-family: 'Roboto', sans-serif !important;
@@ -559,6 +571,10 @@ font-size: 13px;
         max-width: 80vw;
       }
 
+      .outro #show{
+      width:80%;
+
+      }
 }
 
 

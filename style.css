@@ -71,7 +71,7 @@ body{
 }
 
 #active{
-    text-decoration-line: line-through;
+
     color:   #9CCCC7  ;
 }
 .nav{
@@ -117,12 +117,17 @@ body{
 }
 
 #dynamic{
-    max-height: 100vh;
-    display: table-cell;
+    display: flex;
     text-align: center;
-    bottom:30%;
-    margin-bottom: 2vh;
 
+
+}
+
+.photo{
+  display: table-cell;
+  text-align: center;
+  bottom:30%;
+  margin-bottom: 2vh;
 }
 
 #home{
@@ -178,13 +183,27 @@ body{
 }
 
 
+.work{
+  overflow-x: visible !important;
+}
+
+.project{
+  margin-bottom: 5vh;
+}
+
 .work img{
     max-height: 100%vh;
     max-width: 100%vw;
     width:350px;
+    margin:10vh 5vw 0vh 5vw;
 
 }
 
+.work sub{
+  color:gray;
+  font-size: 11px;
+
+}
 
 .contact{
     padding-top: 160px;

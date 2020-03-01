@@ -221,6 +221,7 @@ html{
 .intro header{
   font-size: 30px;
   margin-top:2vh;
+
 }
 
 .intro sub{
@@ -284,6 +285,11 @@ font-size: 13px;
     max-width: 50.5vw;
   }
 
+  video{
+    width:50.5vw;
+
+  }
+
   .dynamic sub{
     font-size: 10px;
     font-family: 'Roboto', sans-serif !important;
@@ -298,6 +304,11 @@ font-size: 13px;
       padding-top: 0vh;
 
 
+    }
+
+    .item1 img{
+
+      width:30vw;
     }
 
     .item2 {
@@ -559,6 +570,14 @@ font-size: 13px;
         padding-left: 1vw;
         padding-right: 1vw;
         max-width: 100vw;
+      }
+
+      video{
+        width: 95vw;
+      }
+      .item1 img{
+
+        width:95vw;
       }
 
 }

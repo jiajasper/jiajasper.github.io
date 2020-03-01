@@ -21,11 +21,12 @@
 </head>
 
 <body>
-    <div class="logo "><a href="work.html" class="reveal-mobile">⏎</a><a href="index.html"><img id="logo" src="img/logo.png"/></a></div>
+    <div class="logo "><a href="work.html" class="reveal-mobile" style="position:fixed; color:#9CCCC7;opacity:0.5;">⏎</a><a href="index.html"><img id="logo" src="img/logo.png"/></a></div>
 
     <div class="nav grid-left hidden-mobile">
         <li><a href="about.html">About</a></li>
         <li><a href="work.html">Works</a></li>
+          <li class="second"><a href="superform.html">Peripheral Furniture - VR</a></li>
           <li class="second"><a href="gizmo.html" id="active">NIKU - Gizmo</a></li>
           <li class="second"><a href="myWizard.html">myWizard - Splunk</a></li>
         <li><a href="photo.html">Photography</a></li>
@@ -57,85 +58,73 @@
 
       <div class="dynamic">
 
+
         <div class="item1">
+          <h3>Mechatronics</h3>
+            <a href="img/gizmo/gizmo-2.jpg" data-lightbox="image-2"><img class="scroll" src="img/gizmo/gizmo-2.jpg"></a><br/><br/>
+            <div class="left-align">
+              <p1>Hardware:</p1><br/><br/>
+              <p1>• Dome-shaped silicone soft case<br/>
+              <p1>• 3D printed dome-shaped hard case and base plate<br/>
+              <p1>• 1 Arduino<br/>
+              <p1>• 2 DC motors attached to 2 3D printed wheels seperately<br/>
+              <p1>• 1 Ultrasonic sensor<br/>
+              <p1>• 1 Motor H-bridge<br/>
+              <p1>• 1 Ball pen tip<br/><br/>
 
-                    <h3>Mechatronics</h3>
-                    <div class="left-align">
-                      <p1>Hardware:</p1><br/><br/>
-                      <p1>• Dome-shaped silicone soft case<br/>
-                      <p1>• 3D printed dome-shaped hard case and base plate<br/>
-                      <p1>• 1 Arduino<br/>
-                      <p1>• 2 DC motors attached to 2 3D printed wheels seperately<br/>
-                      <p1>• 1 Ultrasonic sensor<br/>
-                      <p1>• 1 Motor H-bridge<br/>
-                      <p1>• 1 Ball pen tip<br/><br/>
+              <p1>Arduino void loop () logics:</p1>
+              <br/><br/>
+              <p1>• Distance reading > 80cm: NIKU rotates to the right to search for targets around it.</p1>
+              <br/>
 
-                      <p1>Arduino void loop () logics:</p1>
-                      <br/><br/>
-                      <p1>• Distance reading > 80cm: NIKU rotates to the right to search for targets around it.</p1>
-                      <br/>
+              <p1>• Distance reading < 80cm but > 5cm: NIKU moves forward with one wheel driving forward at a time.</p1>
+              <br>
 
-                      <p1>• Distance reading < 80cm but > 5cm: NIKU moves forward with one wheel driving forward at a time.</p1>
-                      <br>
+              <p1>• Distance reading < 5cm: NIKU charges forward and then reverse.</p1>
+              <br/>
 
-                      <p1>• Distance reading < 5cm: NIKU charges forward and then reverse.</p1>
-                      <br/>
-
-                    </div><br/>
-        </div>
-
-
-        <div class="item2">
-            <a href="img/gizmo/gizmo-2.jpg" data-lightbox="image-2"><img class="scroll" src="img/gizmo/gizmo-2.jpg"></a>
+            </div>
 
           <hr>
         </div>
 
-        <div class="item3">
+        <div class="item2">
           <h3>Experiment</h3>
+            <a href="img/gizmo/gizmo-exp.jpg" data-lightbox="image-4"><img class="scroll" src="img/gizmo/gizmo-exp.jpg"></a><br/><sub>Rapid and efficient experiments on moving mechanics and forms</sub><br/><br/>
           <div class="left-align">
             <p1>NIKU's form design and internal hardware engineering were revolved around three key behaviours that we narrowed down to - clumsy, clingy and annoying.<br/><br/>
                 We made rapid prototypes to test out different sensors (IR, Ultrasonic, Thermal) and to experiment with a variety of moving mechanics (vibration, airflow, 2WD, 3WD, 4WD). We also concurrently tested out different orientations for the physical appearance of the robot.</p1><br/><br/>
           </div>
+          <hr>
         </div>
 
 
-        <div class="item4">
-            <a href="img/gizmo/gizmo-exp.jpg" data-lightbox="image-4"><img class="scroll" src="img/gizmo/gizmo-exp.jpg"></a><br/><sub>Rapid and efficient experiments on moving mechanics and forms</sub>
-            <hr>
-        </div>
-
-
-        <div class="item5">
+        <div class="item3">
           <h3>Prototype</h3>
+          <a href="img/gizmo/gizmo-hardware-iteration.jpg" data-lightbox="image-5"><img class="scroll" src="img/gizmo/gizmo-hardware-iteration.jpg"></a><br/><sub>We teared down a toy 3WD car and soldered our own parts onto it for a rapid working prototype</sub><br/>
+          <br/>
           <div class="left-align">
             <p1>Throughout experiment phase, we made lots of look-like prototypes to mimic specific movement/looks that we desired. Those prototypes were indeed insightful but not enough for us to visualise how different parts of NIKU would work together.</p1><br/><br/>
             <p1>To efficiently test out form factors and key functionalities, we hacked a 3WD toy car and soldered our own parts and arduino board onto it. We also made cardboard casing to visualise internal hardware placement.</p1><br/><br/>
             <p1>Our working prototype worked like a charm and assisted us in finalising design and 3D printing parameters.</p1><br/>
               <br/>
-          </div>
+          </div><hr>
         </div>
 
 
         <div class="item6">
-          <a href="img/gizmo/gizmo-hardware-iteration.jpg" data-lightbox="image-5"><img class="scroll" src="img/gizmo/gizmo-hardware-iteration.jpg"></a><br/><sub>We teared down a toy 3WD car and soldered our own parts onto it for a rapid working prototype</sub><br/>
-          <hr>
+
         </div>
 
 
-        <div class="item7">
+        <div class="item4">
           <h3>3D Printing | Resin | Assembly</h3>
+          <a href="img/gizmo/gizmo-making.jpg" data-lightbox="image-7"><img class="scroll" src="img/gizmo/gizmo-making.jpg"></a><br/><sub>Silicone making with 3D printed mold and hardware assembly</sub><br/>
+          <br/>
           <div class="left-align">
             <p1>This stage was a ton of fun and learning! We made NIKU's silicone case with a custom 3D printed mold. With the help of workshop technicians, we were able to pull off NIKU's squishy look. </p1><br/><br/>
             <p1>My teammate Kiwa did an amazing job at parametric modelling - all of our 3D printed parts fit nicely and hardware assembly was a breeze to complete.
-          </div><br/>
-        </div>
-
-        <div class="item8">
-
-          <!--a href="img/gizmo/niku-final-design.jpg" data-lightbox="image-6"><img class="scroll" src="img/gizmo/niku-final-design.jpg"></a><br/><sub>NIKU mechatronics and parametric design + digital render</sub><br/-->
-          <a href="img/gizmo/gizmo-making.jpg" data-lightbox="image-7"><img class="scroll" src="img/gizmo/gizmo-making.jpg"></a><br/><sub>Silicone making with 3D printed mold and hardware assembly</sub><br/>
-          <hr>
+          </div><br/><hr>
         </div>
 
 

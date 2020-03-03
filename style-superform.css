@@ -218,6 +218,11 @@ html{
   max-width: 50.5vw;
 }
 
+.intro  #gif{
+    width:30vw;
+
+  }
+
 .intro header{
   font-size: 30px;
   margin-top:2vh;
@@ -228,6 +233,7 @@ html{
 font-size: 13px;
 
 }
+
 
 .intro h2{
   font-family: 'Raleway', sans-serif;
@@ -306,10 +312,6 @@ font-size: 13px;
 
     }
 
-    .item1 img{
-
-      width:30vw;
-    }
 
     .item2 {
       grid-area: b;
@@ -530,6 +532,12 @@ font-size: 13px;
     .intro img{
       max-width: 90vw;
     }
+
+  .intro  #gif{
+      width:95vw;
+
+    }
+
     .dynamic {
         display: grid;
         grid-template-columns: repeat(1, 1fr);

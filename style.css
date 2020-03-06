@@ -260,7 +260,7 @@ footer{
 
 }
 
-@media (max-width:1023px) {
+@media (max-width:1024px) {
     html{
     width:100%vw;
     overflow: scroll;
@@ -294,7 +294,7 @@ footer{
     }
 
     #logo{
-    width:20vw;
+    width:10vw;
     grid-area: logo;
     position:relative;
 

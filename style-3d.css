@@ -113,13 +113,6 @@ html{
     opacity: 0.5;
   }
 
-  #dynamic{
-    max-height: 100vh;
-    display: table-cell;
-    text-align: center;
-    bottom:30%;
-
-  }
 
   #homepic{
     height: 96vh;
@@ -218,15 +211,22 @@ html{
   max-width: 50.5vw;
 }
 
+.item1  #gif{
+    width:30vw;
+
+  }
+
 .intro header{
   font-size: 30px;
   margin-top:2vh;
+
 }
 
 .intro sub{
 font-size: 13px;
 
 }
+
 
 .intro h2{
   font-family: 'Raleway', sans-serif;
@@ -246,7 +246,7 @@ font-size: 13px;
 }
 
 
-.dynamic {
+.threed {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -268,23 +268,28 @@ font-size: 13px;
 
   }
 
-.dynamic p1{
+.threed p1{
   font-weight:100;
   font-size: 13px;
 }
 
-  .dynamic h3 {
+  .threed h3 {
     font-family: 'Roboto', sans-serif !important;
     font-weight: lighter;
     font-size: 25px;
 
     }
 
-  .dynamic img{
+  .threed img{
     max-width: 50.5vw;
   }
 
-  .dynamic sub{
+  video{
+    width:50.5vw;
+
+  }
+
+  .threed sub{
     font-size: 10px;
     font-family: 'Roboto', sans-serif !important;
     color: grey;
@@ -299,6 +304,7 @@ font-size: 13px;
 
 
     }
+
 
     .item2 {
       grid-area: b;
@@ -519,6 +525,12 @@ font-size: 13px;
     .intro img{
       max-width: 90vw;
     }
+
+  .intro  #gif{
+      width:95vw;
+
+    }
+
     .dynamic {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -559,6 +571,14 @@ font-size: 13px;
         padding-left: 1vw;
         padding-right: 1vw;
         max-width: 100vw;
+      }
+
+      video{
+        width: 95vw;
+      }
+      .item1 img{
+
+        width:95vw;
       }
 
 }

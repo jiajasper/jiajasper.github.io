@@ -75,6 +75,16 @@ body{
 
 }
 
+
+.work-introduction{
+  color: #9CCCC7;
+  margin: 10vh 0 10vh 0;
+  font-style:italic;
+  font-size: 25px;
+
+}
+
+
 #logo{
     width:5vw;
     height: auto;
@@ -196,7 +206,7 @@ body{
 
 .work{
   overflow-x: scroll !important;
-  margin: 10vh 10vh 0 0;
+  margin: -10vh 10vh 0 0;
 }
 
 .project{
@@ -303,6 +313,17 @@ footer{
       color: #9CCCC7 ;
       margin: 0;
     }
+
+
+    .work-introduction{
+      color: #9CCCC7;
+      margin: 10vh 5vh 10vh 5vh;
+      font-style:italic;
+      font-size: 25px;
+
+    }
+
+
     .logo{
     text-align: center;
     }

@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>JasperDesign</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style-3d.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
@@ -22,12 +22,11 @@
 
 
 <body>
-   <div class="logo"><img id="logo" src="img/logo.png"/></div>
+   <div class="logo"><a href="index.html"><img id="logo" src="img/logo.png"/></a></div>
     <div class="nav grid-left">
         <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Works</a></li>
+        <li><a href="work.html" id="active">Works</a></li>
         <li><a href="photo.html">Photography</a></li>
-        <li><a href="contact.html" id="active">Contact</a></li>
     </div>
 
     <div class="social">
@@ -38,16 +37,59 @@
 
     <div class="grid-right">
 
-        <div id="dynamic" class="about">
+        <div id="dynamic" class="threed">
+
+          <div class="item1">
+            <a href="img/3d/colorful.jpg" data-lightbox="image-1"><img class="scroll" src="img/3d/colorful.jpg"></a><br>
+            <a href="img/homepic.png" data-lightbox="image-1"><img class="scroll" src="img/homepic.png"></a><br>
+            <video controls loop><source src="img/superform/superform.mp4" type="video/mp4"></video><br>
+            <video controls loop><source src="img/superform/superform-2.mp4" type="video/mp4"></video><br>
+            <sub>3D Animations</sub><br><br>
+
+            <a href="img/3d/starbucks-cup-far-tilt.jpg" data-lightbox="image-1"><img class="scroll" src="img/3d/starbucks-cup-far-tilt.jpg"></a><br>
+            <a href="img/3d/starbucks-cup-close-tilt.jpg" data-lightbox="image-1"><img class="scroll" src="img/3d/starbucks-cup-close-tilt.jpg"></a><br>
+            <sub>Bump Map Study</sub><br><br>
+
+            <a href="img/3d/msi-gf75-rough-render.png" data-lightbox="image-1"><img class="scroll" src="img/3d/msi-gf75-rough-render.png"></a><br>
+            <a href="img/3d/msi-gf75-rough-render-2.png" data-lightbox="image-1"><img class="scroll" src="img/3d/msi-gf75-rough-render-2.png"></a><br>
+            <sub>Laptop form Study</sub><br><br>
+
+
+            <a href="img/superform/vr-lofi-process-2.jpg" data-lightbox="image-1"><img class="scroll" src="img/superform/vr-lofi-process-2.jpg"></a><br>
+            <a href="img/superform/vr-lofi-process-3.jpg" data-lightbox="image-1"><img class="scroll" src="img/superform/vr-lofi-process-3.jpg"></a><br>
+            <a href="img/superform/vr-lofi-process-4.jpg" data-lightbox="image-1"><img class="scroll" src="img/superform/vr-lofi-process-4.jpg"></a><br>
+            <sub>VR environmenty</sub><br><br>
+
+
+
+
+
+
+
+          </div>
 
         </div>
+
+    </div>
 
     <script type="text/javascript">
             window.sr = ScrollReveal();
             sr.reveal('.scroll');
     </script>
 
-    <footer>jasper.design @2020</footer>
+    <script src="lightbox-plus-jquery.js"></script>
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'fitImagesInViewport':true,
+        'disableScrolling':true,
+      })
+    </script>
+
+    <footer>designed & coded by jasper.jia @2020</footer>
+
     </div>
 
 </body>

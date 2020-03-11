@@ -78,7 +78,7 @@ body{
 
 .work-introduction{
   color: #9CCCC7;
-  margin: 10vh 0 10vh 0;
+  margin: 10vh 5vw 10vh 0;
   font-style:italic;
   font-size: 25px;
 
@@ -317,7 +317,7 @@ footer{
 
     .work-introduction{
       color: #9CCCC7;
-      margin: 10vh 5vh 10vh 5vh;
+      margin: 10vh 10vW 5vh 10vW;
       font-style:italic;
       font-size: 25px;
 

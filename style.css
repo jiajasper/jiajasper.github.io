@@ -78,7 +78,7 @@ body{
 
 .work-introduction{
   color: #9CCCC7;
-  margin: 10vh 5vw 10vh 0;
+  margin: 10vh 5vw 10vh 10px;
   font-style:italic;
   font-size: 25px;
 
@@ -201,23 +201,31 @@ body{
   max-width: 100%vw;
   width:250px;
   margin: -10px 0px 20px 0px;
+
 }
 
 
 .work{
   overflow-x: scroll !important;
   margin: -10vh 10vh 0 0;
+  font-weight: lighter;
+  font-size: 13px;
+
 }
 
+
 .project{
-  margin-bottom: 5vh;
+  margin-bottom: 5px;
 }
 
 .work img{
     max-height: 100%vh;
     max-width: 100%vw;
-    width:350px;
-
+    width:300px;
+    margin:10px;
+  /*  border-style: solid ;
+    border-color: #9CCCC7 ;
+    border-width: thin;*/
 }
 
 .work sub{
@@ -406,6 +414,7 @@ footer{
 
     .work{
     padding-top: 10px;
+    border-style: none;
   }
     .work img{
     max-height: 100%vh;
@@ -413,6 +422,10 @@ footer{
     width:300px;
     margin: 0;
 
+}
+
+.project{
+  margin-bottom: 5vh;
 }
 
 .about{

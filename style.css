@@ -72,17 +72,9 @@ body{
   color: #9CCCC7 ;
   margin: 10vh;
   font-style: italic;
-
-}
-
-
-.work-introduction{
-  color: #9CCCC7;
-  margin: 10vh 5vw 10vh 10px;
-  font-style:italic;
   font-size: 25px;
-
 }
+
 
 
 #logo{
@@ -320,6 +312,7 @@ footer{
     .introduction{
       color: #9CCCC7 ;
       margin: 0;
+      font-size:26px;
     }
 
 

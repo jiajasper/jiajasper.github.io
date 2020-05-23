@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SQL - Category - Jasper Jia</title>
+        <link>https://jiajasper.github.io/categories/sql/</link>
+        <description>SQL - Category - Jasper Jia</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Mar 2019 14:10:27 &#43;0100</lastBuildDate><atom:link href="https://jiajasper.github.io/categories/sql/" rel="self" type="application/rss+xml" /><item>
+    <title>myWizard - Real-time interactive data visualization tool</title>
+    <link>https://jiajasper.github.io/posts/third/</link>
+    <pubDate>Fri, 01 Mar 2019 14:10:27 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>https://jiajasper.github.io/posts/third/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/splunk/splunk.jpg" referrerpolicy="no-referrer">
+            </div>myWizard is an interactive, real-time data visualisation tool to automate and monitor supply chain IT operation. About this project  Tech Consulting Work Experience @ Accenture  
+Intro The selected work is a collection of 10+ interactive live data visualization dashboards from Accenture&rsquo;s myWizards AIOps package. The interactive dashboards improve the transparency and efficiency of the supply chain IT operations at Coles Supermarket Australia. It is made with Splunk Processing Language and custom frontend codes.]]></description>
+</item></channel>
+</rss>

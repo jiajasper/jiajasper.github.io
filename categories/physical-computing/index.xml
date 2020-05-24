@@ -5,13 +5,14 @@
         <description>Physical Computing - Category - Jasper Jia</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://jiajasper.github.io/categories/physical-computing/" rel="self" type="application/rss+xml" /><item>
     <title>NIKU - The Clingy Bot</title>
-    <link>https://jiajasper.github.io/posts/first/</link>
+    <link>https://jiajasper.github.io/posts/niku/</link>
     <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://jiajasper.github.io/posts/first/</guid>
+    <guid>https://jiajasper.github.io/posts/niku/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/niku/gizmo-1.jpg" referrerpolicy="no-referrer">
-            </div>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop. About this project  3-week Physical Computing Project @idecourse  
-Intro NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.]]></description>
+            </div>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.
+Intro NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.
+Mechatronics Hardware • Dome-shaped silicone soft case]]></description>
 </item></channel>
 </rss>

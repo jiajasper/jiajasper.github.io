@@ -4,15 +4,16 @@
         <link>https://jiajasper.github.io/categories/unreal-engine/</link>
         <description>Unreal Engine - Category - Jasper Jia</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://jiajasper.github.io/categories/unreal-engine/" rel="self" type="application/rss+xml" /><item>
-    <title>IoT chair VR</title>
-    <link>https://jiajasper.github.io/posts/second/</link>
+    <title>IoT Stool VR</title>
+    <link>https://jiajasper.github.io/posts/smart-stool/</link>
     <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://jiajasper.github.io/posts/second/</guid>
+    <guid>https://jiajasper.github.io/posts/smart-stool/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/images/superform/superform.gif" referrerpolicy="no-referrer">
             </div>&ldquo;What if our furnitures could replace our conventional peripheral devices to control electronics in the living space?&rdquo;
 Let&rsquo;s simulate this smart furniture experience in an immersive VR environment!
-About this project  3-week Furniture Design Solo Project @idecourse   The VR Stool Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment!" Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment!]]></description>
+The VR Stool Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment!" Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment! 
+This keycap shaped stool would function as the VR controller (aka the peripheral) for the users to interact with the VR environment.]]></description>
 </item></channel>
 </rss>

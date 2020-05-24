@@ -6,17 +6,14 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</lastBuildDate>
             <atom:link href="https://jiajasper.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>IoT Stool VR</title>
+    <title>VR controller stool</title>
     <link>https://jiajasper.github.io/posts/smart-stool/</link>
     <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://jiajasper.github.io/posts/smart-stool/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/superform/superform.gif" referrerpolicy="no-referrer">
-            </div>&ldquo;What if our furnitures could replace our conventional peripheral devices to control electronics in the living space?&rdquo;
-Let&rsquo;s simulate this smart furniture experience in an immersive VR environment!
-The VR Stool Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment!" Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment! 
-This keycap shaped stool would function as the VR controller (aka the peripheral) for the users to interact with the VR environment.]]></description>
+    <description><![CDATA[&ldquo;What if our furnitures could replace our conventional controllers to interact with VR content?&rdquo;
+Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment!" Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment! 
+The VR Stool The form of the VR stool draws inspriration from keycaps and the semiotics of this shape invites the users to try to interact with the stool.]]></description>
 </item><item>
     <title>NIKU - The Clingy Bot</title>
     <link>https://jiajasper.github.io/posts/niku/</link>
@@ -34,9 +31,7 @@ Mechatronics Hardware • Dome-shaped silicone soft case]]></description>
     <pubDate>Fri, 01 Mar 2019 14:10:27 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://jiajasper.github.io/posts/splunk/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/splunk/splunk.jpg" referrerpolicy="no-referrer">
-            </div>myWizard is an interactive, real-time data visualisation tool to automate and monitor supply chain IT operation.
+    <description><![CDATA[myWizard is an interactive, real-time data visualisation tool to automate and monitor supply chain IT operation.
 Intro The selected work is a collection of 10+ interactive live data visualization dashboards from Accenture&rsquo;s myWizards AIOps package. The interactive dashboards improve the transparency and efficiency of the supply chain IT operations at Coles Supermarket Australia. It is made with Splunk Processing Language and custom frontend codes.
 *Please keep in mind that I am not allowed to show this project in greater details, the graphical materials are mostly renders based off the working prototypes.]]></description>
 </item></channel>

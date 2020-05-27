@@ -1,77 +1,177 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - Jasper Jia</title>
-        <link>https://jiajasper.github.io/categories/</link>
-        <description>Categories - Category - Jasper Jia</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://jiajasper.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Blender 3D</title>
-    <link>https://jiajasper.github.io/categories/blender-3d/</link>
-    <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/blender-3d/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>C&#43;&#43;</title>
-    <link>https://jiajasper.github.io/categories/c&#43;&#43;/</link>
-    <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/c&#43;&#43;/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Prototyping</title>
-    <link>https://jiajasper.github.io/categories/prototyping/</link>
-    <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/prototyping/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Unreal Engine</title>
-    <link>https://jiajasper.github.io/categories/unreal-engine/</link>
-    <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/unreal-engine/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Virtual Reality</title>
-    <link>https://jiajasper.github.io/categories/virtual-reality/</link>
-    <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/virtual-reality/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Arduino</title>
-    <link>https://jiajasper.github.io/categories/arduino/</link>
-    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/arduino/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Physical Computing</title>
-    <link>https://jiajasper.github.io/categories/physical-computing/</link>
-    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/physical-computing/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Agiie</title>
-    <link>https://jiajasper.github.io/categories/agiie/</link>
-    <pubDate>Fri, 01 Mar 2019 14:10:27 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/agiie/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Data Visualization</title>
-    <link>https://jiajasper.github.io/categories/data-visualization/</link>
-    <pubDate>Fri, 01 Mar 2019 14:10:27 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/data-visualization/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Front-end</title>
-    <link>https://jiajasper.github.io/categories/front-end/</link>
-    <pubDate>Fri, 01 Mar 2019 14:10:27 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/categories/front-end/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Jasper x Jia</title>
+    <link>http://jiajasper.github.io/categories/</link>
+    <description>Recent content in Categories on Jasper x Jia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2020 17:55:28 +0800</lastBuildDate>
+    
+	<atom:link href="http://jiajasper.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aframe</title>
+      <link>http://jiajasper.github.io/categories/aframe/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/aframe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AR.js</title>
+      <link>http://jiajasper.github.io/categories/ar.js/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/ar.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Augmented Reality</title>
+      <link>http://jiajasper.github.io/categories/augmented-reality/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/augmented-reality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>http://jiajasper.github.io/categories/javascript/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prototyping</title>
+      <link>http://jiajasper.github.io/categories/prototyping/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/prototyping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebXR</title>
+      <link>http://jiajasper.github.io/categories/webxr/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/webxr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blender 3D</title>
+      <link>http://jiajasper.github.io/categories/blender-3d/</link>
+      <pubDate>Wed, 01 Apr 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/blender-3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://jiajasper.github.io/categories/c&#43;&#43;/</link>
+      <pubDate>Wed, 01 Apr 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unreal Engine</title>
+      <link>http://jiajasper.github.io/categories/unreal-engine/</link>
+      <pubDate>Wed, 01 Apr 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/unreal-engine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Reality</title>
+      <link>http://jiajasper.github.io/categories/virtual-reality/</link>
+      <pubDate>Wed, 01 Apr 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/virtual-reality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino</title>
+      <link>http://jiajasper.github.io/categories/arduino/</link>
+      <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Physical Computing</title>
+      <link>http://jiajasper.github.io/categories/physical-computing/</link>
+      <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/physical-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agiie</title>
+      <link>http://jiajasper.github.io/categories/agiie/</link>
+      <pubDate>Fri, 01 Mar 2019 14:10:27 +0100</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/agiie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Visualization</title>
+      <link>http://jiajasper.github.io/categories/data-visualization/</link>
+      <pubDate>Fri, 01 Mar 2019 14:10:27 +0100</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Front-end</title>
+      <link>http://jiajasper.github.io/categories/front-end/</link>
+      <pubDate>Fri, 01 Mar 2019 14:10:27 +0100</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/front-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Splunk</title>
+      <link>http://jiajasper.github.io/categories/splunk/</link>
+      <pubDate>Fri, 01 Mar 2019 14:10:27 +0100</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/splunk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>http://jiajasper.github.io/categories/sql/</link>
+      <pubDate>Fri, 01 Mar 2019 14:10:27 +0100</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A/B Testing</title>
+      <link>http://jiajasper.github.io/categories/a/b-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jiajasper.github.io/categories/a/b-testing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

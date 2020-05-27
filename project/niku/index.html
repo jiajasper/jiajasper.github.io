@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.70.0" />
+	
+	<title>NIKU | Jasper x Jia</title>
+	
+	
+
+	<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://jiajasper.github.io/project/niku/cover.jpg"/>
+<meta name="twitter:title" content="NIKU"/>
+<meta name="twitter:description" content="3-week Physical Computing Project @idecourse"/>
+
+	<meta property="og:title" content="NIKU" />
+<meta property="og:description" content="3-week Physical Computing Project @idecourse" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jiajasper.github.io/project/niku/" />
+<meta property="og:image" content="http://jiajasper.github.io/project/niku/cover.jpg"/>
+<meta property="article:published_time" content="2019-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-01T00:00:00+00:00" />
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="/css/medium.css" rel="stylesheet">
+	<link href="/css/additional.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <div class="container pr-0">
+        
+        <a class="navbar-brand" href="http://jiajasper.github.io/">
+
+            
+            <span style="font-family:Righteous;">Jasper x Jia</span>
+            
+        </a>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+            
+            <ul class="navbar-nav ml-auto">
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/project">Project</a>
+                </li>
+                 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/static">Bio</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+
+        <div class="site-content">   
+            <div class="container">
+ 
+    <div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p></p>
+    
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        
+                        <h1 class="posttitle">NIKU</h1> 
+                    </div>
+
+                    
+
+                    
+                    <div class="article-post">
+                        <p><img src="/images/niku/gizmo-1.jpg" alt=""></p>
+<p>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.</p>
+<p>NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.</p>
+<h3 id="mechatronics">Mechatronics</h3>
+<h1 id="heading"></h1>
+<h1 id="heading-1"></h1>
+<h1 id="heading-2"></h1>
+<h6 id="hardware">Hardware</h6>
+<p>• Dome-shaped silicone soft case</p>
+<p>• 3D printed dome-shaped hard case and base plate</p>
+<p>• 1 Arduino</p>
+<p>• 2 DC motors attached to 2 3D printed wheels seperately</p>
+<p>• 1 Ultrasonic sensor</p>
+<p>• 1 Motor H-bridge</p>
+<p>• 1 Ball pen tip</p>
+<p><img src="/images/niku/gizmo-2.jpg" alt="" title="Exploded render"></p>
+<h6 id="interaction">Interaction</h6>
+<p><img src="/images/niku/gizmo-gif.gif" alt="" title="NIKU rotate to search for a target"></p>
+<p><img src="/images/niku/gizmo-gif-1.gif" alt="" title="NIKU slowly moves towards your foot"></p>
+<p><img src="/images/niku/gizmo-gif-2.gif" alt="" title="NIKU charges at your foot!"></p>
+<h6 id="arduino-void-loop--logics">Arduino void loop () logics</h6>
+<p>• Distance reading &gt; 80cm: NIKU rotates to the right to search for targets around it.</p>
+<p>• Distance reading &lt; 80cm but &gt; 5cm: NIKU moves forward with one wheel driving forward at a time.</p>
+<p>• Distance reading &lt; 5cm: NIKU charges forward and then reverse.</p>
+<p><img src="/images/niku/niku-hardware-info.jpg" alt="" title="Arduino Circuit"></p>
+<h3 id="ideation">Ideation</h3>
+<p><img src="/images/niku/gizmo-moodboard.jpg" alt="" title="Moodboard and Sketches"></p>
+<p>NIKU&rsquo;s form design and internal hardware engineering were revolved around three key behaviours that we narrowed down to - clumsy, clingy and annoying.</p>
+<p><img src="/images/niku/gizmo-exp.jpg" alt="" title="Rapid and efficient experiments on moving mechanics and forms"></p>
+<p>We made rapid prototypes to test out different sensors (IR, Ultrasonic, Thermal) and to experiment with a variety of moving mechanics (vibration, airflow, 2WD, 3WD, 4WD). We also concurrently tested out different orientations for the physical appearance of the robot.</p>
+<h3 id="prototype">Prototype</h3>
+<p><img src="/images/niku/gizmo-hardware-iteration.jpg" alt="" title="We teared down a toy 3WD car and soldered our own parts onto it for a rapid working prototype"></p>
+<p>Throughout experiment phase, we made lots of look-like prototypes to mimic specific movement/looks that we desired. Those prototypes were indeed insightful but not enough for us to visualise how different parts of NIKU would work together.</p>
+<p>To efficiently test out form factors and key functionalities, we hacked a 3WD toy car and soldered our own parts and arduino board onto it. We also made cardboard casing to visualise internal hardware placement.</p>
+<p>Our working prototype worked like a charm and assisted us in finalising design and 3D printing parameters.</p>
+<h3 id="3d-printing--resin--assembly">3D Printing + Resin + Assembly</h3>
+<p><img src="/images/niku/gizmo-making.jpg" alt="" title="Silicone making with 3D printed mold and hardware assembly"></p>
+<p>This stage was a ton of fun and learning! We made NIKU&rsquo;s silicone case with a custom 3D printed mold. With the help of workshop technicians, we were able to pull off NIKU&rsquo;s squishy look.</p>
+<p>My teammate Kiwa did an amazing job at parametric modelling - all of our 3D printed parts fit nicely and hardware assembly was a breeze to complete.</p>
+<h3 id="dyson-school-wip-show-feature">Dyson School WIP Show Feature</h3>
+<p><img src="/images/niku/gizmo-show.jpg" alt="" title="NIKU was one of the six year 1 projects to be featured in IDE year 2's Work in Progress Show at Imperial College London.">
+<img src="/images/niku/gizmo-gif-3.gif" alt="" title="NIKU and I on demo day!"></p>
+
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                        <a class="d-block col-md-6" href="http://jiajasper.github.io/project/superform/"> &laquo; Smart Stool VR</a>
+                    
+                    
+                        <a class="d-block col-md-6 text-lg-right" href="http://jiajasper.github.io/project/splunk/">myWizard &raquo;</a>
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/mediumish.js"></script>
+
+    </body>
+</html>

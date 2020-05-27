@@ -1,27 +1,58 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Prototyping - Category - Jasper Jia</title>
-        <link>https://jiajasper.github.io/categories/prototyping/</link>
-        <description>Prototyping - Category - Jasper Jia</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://jiajasper.github.io/categories/prototyping/" rel="self" type="application/rss+xml" /><item>
-    <title>VR controller stool</title>
-    <link>https://jiajasper.github.io/posts/smart-stool/</link>
-    <pubDate>Wed, 01 Apr 2020 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/posts/smart-stool/</guid>
-    <description><![CDATA[&ldquo;What if our furnitures could replace our conventional controllers to interact with VR content?&rdquo;
-Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment!" Instead of the conventional VR controllers, the users use the VR stool to interact with the VR environment! 
-The VR Stool The form of the VR stool draws inspriration from keycaps and the semiotics of this shape invites the users to try to interact with the stool.]]></description>
-</item><item>
-    <title>NIKU - The Clingy Bot</title>
-    <link>https://jiajasper.github.io/posts/niku/</link>
-    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/posts/niku/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/niku/gizmo-1.jpg" referrerpolicy="no-referrer">
-            </div>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.
-Intro NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.
-Mechatronics Hardware • Dome-shaped silicone soft case]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prototyping on Jasper x Jia</title>
+    <link>http://jiajasper.github.io/categories/prototyping/</link>
+    <description>Recent content in Prototyping on Jasper x Jia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2020 17:55:28 +0800</lastBuildDate>
+    
+	<atom:link href="http://jiajasper.github.io/categories/prototyping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ARcessible - inclusive AR user experience design </title>
+      <link>http://jiajasper.github.io/posts/arcessible/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/posts/arcessible/</guid>
+      <description>This is an exploration project on making AR experience more accessible to the Vision Impaired People (VIP).
+Through this project I learnt about inclusive design and picked up new skills such as developing AR content on Web with WebXR and AR.js (Aframe).
+Working closely with VIP was also an invaluable experience where I learnt that designer should be designing WITH the users as opposed to designing FOR the users.
+What is AR Problem Current Barriers How do VIP use their iphones?</description>
+    </item>
+    
+    <item>
+      <title>VR controller stool</title>
+      <link>http://jiajasper.github.io/posts/smart-stool/</link>
+      <pubDate>Wed, 01 Apr 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/posts/smart-stool/</guid>
+      <description>&amp;ldquo;What if our furnitures could replace our conventional controllers to interact with VR content?&amp;rdquo;
+The VR Stool The form of the VR stool draws inspriration from keycaps and the semiotics of this shape invites the users to try to interact with the stool. The keycap shape is created by stretching and tying a piece of lycra over the internals of the stool.
+Interaction + Demo VR Level Design + Unreal Blueprints This melancholy VR room is modelled with blender 3D and lighted in unreal engine.</description>
+    </item>
+    
+    <item>
+      <title>NIKU - The Clingy Bot</title>
+      <link>http://jiajasper.github.io/posts/niku/</link>
+      <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/posts/niku/</guid>
+      <description>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.
+Intro NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&amp;rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.
+Mechatronics Hardware • Dome-shaped silicone soft case</description>
+    </item>
+    
+    <item>
+      <title>ARcessible - inclusive AR user experience design </title>
+      <link>http://jiajasper.github.io/project/arcessible/</link>
+      <pubDate>Fri, 01 May 2020 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/project/arcessible/</guid>
+      <description>4-week Self-initiated Solo Project @idecourse</description>
+    </item>
+    
+  </channel>
 </rss>

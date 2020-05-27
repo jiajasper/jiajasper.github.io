@@ -1,18 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Arduino - Category - Jasper Jia</title>
-        <link>https://jiajasper.github.io/categories/arduino/</link>
-        <description>Arduino - Category - Jasper Jia</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://jiajasper.github.io/categories/arduino/" rel="self" type="application/rss+xml" /><item>
-    <title>NIKU - The Clingy Bot</title>
-    <link>https://jiajasper.github.io/posts/niku/</link>
-    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://jiajasper.github.io/posts/niku/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/niku/gizmo-1.jpg" referrerpolicy="no-referrer">
-            </div>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.
-Intro NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.
-Mechatronics Hardware • Dome-shaped silicone soft case]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on Jasper x Jia</title>
+    <link>http://jiajasper.github.io/categories/arduino/</link>
+    <description>Recent content in Arduino on Jasper x Jia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Oct 2019 17:55:28 +0800</lastBuildDate>
+    
+	<atom:link href="http://jiajasper.github.io/categories/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NIKU - The Clingy Bot</title>
+      <link>http://jiajasper.github.io/posts/niku/</link>
+      <pubDate>Tue, 01 Oct 2019 17:55:28 +0800</pubDate>
+      
+      <guid>http://jiajasper.github.io/posts/niku/</guid>
+      <description>NIKU is a clingy and attention-seeking robot companion who tracks down and headbutts human feet non-stop.
+Intro NIKU has a soft white body made of silicone to contain its electronic hardware. It resembles a juicy and meaty bun - hence the name NIKU (ニク: meat in Japanese). Through NIKU&amp;rsquo;s playful interaction, we hope to fill the human psychological need of being wanted in this ever isolating society.
+Mechatronics Hardware • Dome-shaped silicone soft case</description>
+    </item>
+    
+  </channel>
 </rss>

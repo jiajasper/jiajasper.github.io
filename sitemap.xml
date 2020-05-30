@@ -113,6 +113,16 @@
   </url>
   
   <url>
+    <loc>http://jiajasper.github.io/project/niku/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jiajasper.github.io/project/splunk/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://jiajasper.github.io/categories/agiie/</loc>
     <lastmod>2019-03-01T14:10:27+01:00</lastmod>
   </url>
@@ -138,26 +148,21 @@
   </url>
   
   <url>
-    <loc>http://jiajasper.github.io/project/niku/</loc>
-    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jiajasper.github.io/project/splunk/</loc>
-    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://jiajasper.github.io/project/jadefox/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jiajasper.github.io/static/</loc>
+    <loc>http://jiajasper.github.io/project/bumpmap/</loc>
+    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://jiajasper.github.io/categories/a/b-testing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://jiajasper.github.io/static/</loc>
   </url>
   
   <url>

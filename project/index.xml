@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Jasper x Jia</title>
+    <title>Projects on Jasper Jia</title>
     <link>http://jiajasper.github.io/project/</link>
-    <description>Recent content in Projects on Jasper x Jia</description>
+    <description>Recent content in Projects on Jasper Jia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
@@ -32,7 +32,7 @@
     <item>
       <title>NIKU</title>
       <link>http://jiajasper.github.io/project/niku/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jiajasper.github.io/project/niku/</guid>
       <description>3-week Physical Computing Project @idecourse</description>
@@ -41,7 +41,7 @@
     <item>
       <title>myWizard</title>
       <link>http://jiajasper.github.io/project/splunk/</link>
-      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jiajasper.github.io/project/splunk/</guid>
       <description>Tech Consulting Work Experience @ Accenture</description>
@@ -50,10 +50,19 @@
     <item>
       <title>Jade Fox Melboure</title>
       <link>http://jiajasper.github.io/project/jadefox/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jiajasper.github.io/project/jadefox/</guid>
       <description>Freelance Branding, Photography and Web Development for local restaurant Jade Fox</description>
+    </item>
+    
+    <item>
+      <title>Starbucks Coffee Cup</title>
+      <link>http://jiajasper.github.io/project/bumpmap/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jiajasper.github.io/project/bumpmap/</guid>
+      <description>A bump map texture study on Blender 3D</description>
     </item>
     
   </channel>

@@ -56,5 +56,14 @@ Intro The selected work is a collection of 10+ interactive live data visualizati
 *Please keep in mind that I am not allowed to show this project in greater details, the graphical materials are mostly renders based off the working prototypes.</description>
     </item>
     
+    <item>
+      <title>Starbucks Coffee Cup</title>
+      <link>http://jiajasper.github.io/posts/bumpmap/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://jiajasper.github.io/posts/bumpmap/</guid>
+      <description>A bump map texture study on Blender 3D</description>
+    </item>
+    
   </channel>
 </rss>

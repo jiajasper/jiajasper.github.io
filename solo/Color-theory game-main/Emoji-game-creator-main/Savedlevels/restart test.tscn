@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=1]
+[ext_resource path="res://tilemap_blocks.tres" type="TileSet" id=3]
+[ext_resource path="res://TileMap.gd" type="Script" id=4]
+[ext_resource path="res://Objects/Fox.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Objects/Tiger.tscn" type="PackedScene" id=6]
+
+[node name="Level" type="Node2D"]
+position = Vector2( -2.00568, -1.23427 )
+script = ExtResource( 1 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 9, 9 )
+cell_tile_origin = 1
+centered_textures = true
+format = 1
+tile_data = PoolIntArray( 1703982, 20, 0, 1703983, 20, 0, 1703984, 20, 0, 1703985, 20, 0, 1769518, 20, 0, 1769536, 20, 0, 1769537, 20, 0, 1835054, 20, 0, 1835073, 20, 0, 1900590, 20, 0, 1900609, 20, 0, 1966126, 20, 0, 1966145, 20, 0, 2031662, 20, 0, 2031681, 20, 0, 2097198, 20, 0, 2097217, 20, 0, 2162734, 20, 0, 2162753, 20, 0, 2228270, 20, 0, 2228272, 20, 0, 2228273, 20, 0, 2228274, 20, 0, 2228275, 20, 0, 2228276, 20, 0, 2228277, 20, 0, 2228278, 20, 0, 2228279, 20, 0, 2228280, 20, 0, 2228281, 20, 0, 2228289, 20, 0, 2293806, 20, 0, 2293807, 20, 0, 2293816, 20, 0, 2293817, 20, 0, 2293819, 20, 0, 2293820, 20, 0, 2293821, 20, 0, 2293822, 20, 0, 2293823, 20, 0, 2293824, 20, 0, 2293825, 20, 0 )
+script = ExtResource( 4 )
+
+[node name="Fox" parent="." instance=ExtResource( 5 )]
+position = Vector2( 448.99, 273.375 )
+
+[node name="Tiger" parent="." instance=ExtResource( 6 )]
+position = Vector2( 527.271, 259.312 )
+
+[node name="@Tiger@87" parent="." instance=ExtResource( 6 )]
+position = Vector2( 478.521, 167.437 )

@@ -34,9 +34,9 @@ animations = [ {
 "name": "Pig",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
-"name": "Frog",
+"name": "Player",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
@@ -44,20 +44,24 @@ animations = [ {
 "name": "Tiger",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Frog",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "Fox",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
-"loop": true,
-"name": "Player",
 "speed": 5.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
 input_pickable = true
 script = ExtResource( 1 )
+GRAVITY = 8000
+JUMP_FORCE = 4000
+ACCELERATION = 3000
+DECELERATION = 3000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
@@ -66,7 +70,7 @@ shape = SubResource( 1 )
 position = Vector2( -4.76759, -0.132431 )
 frames = SubResource( 5 )
 animation = "Player"
-frame = 1
+frame = 2
 playing = true
 [connection signal="mouse_entered" from="." to="." method="_on_Player_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_Player_mouse_exited"]

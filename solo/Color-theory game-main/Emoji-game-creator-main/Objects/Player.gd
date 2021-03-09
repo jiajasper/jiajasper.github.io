@@ -1,6 +1,7 @@
 extends KinematicBody2D
 # This gd script is for player control!
 onready var object_cursor = get_node("/root/main/Editor_Object")
+#signal collided
 
 var input_direction = 0
 var direction = 0
@@ -19,6 +20,7 @@ export (int) var MAX_SPEED = 3000
 export (int) var ACCELERATION = 5000
 export (int) var DECELERATION = 5000
 
+var player_color = "white"
 var player_dead = false
 
 func _ready():
@@ -48,10 +50,15 @@ func _physics_process(delta):
 	 
 		if Input.is_action_pressed("ui_left"):
 			input_direction = -1
+			get_node( "AnimatedSprite" ).set_flip_h( true )
+			get_node( "AnimatedSprite" ).set_speed_scale(3)
 		elif Input.is_action_pressed("ui_right"):
 			input_direction = 1
+			get_node( "AnimatedSprite" ).set_flip_h( false )
+			get_node( "AnimatedSprite" ).set_speed_scale(3)
 		else:
 			input_direction = 0
+			get_node( "AnimatedSprite" ).set_speed_scale(1)
 
 		# MOVEMENT DIRECTION AND SPEED CALCULATION
 		if input_direction == - direction:
@@ -73,6 +80,7 @@ func _physics_process(delta):
 		var collide = move_and_collide(velocity * delta)
 		
 		if collide:
+			#emit_signal("collided", collide)
 			if collide.get_collider().enemy:
 				die()
 			else:
@@ -102,3 +110,4 @@ func _on_Player_mouse_exited():
 	object_cursor.can_place = true
 	object_cursor.show()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+

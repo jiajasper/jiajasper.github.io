@@ -1,21 +1,21 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Items/Item_Fox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/TabContainer.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/TabContainer2.gd" type="Script" id=3]
+[ext_resource path="res://Items/Item_YellowBlocks.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Items/Item_MagentaBlocks.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scripts/ScrollContainer.gd" type="Script" id=6]
 [ext_resource path="res://fonts/dogica/TTF/dogica.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Sprites/Colorblocks/W.png" type="Texture" id=8]
 [ext_resource path="res://Items/Item_Texture.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Sprites/Colorblocks/M.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Colorblocks/B.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Colorblocks/C.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Colorblocks/G.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Colorblocks/R.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Colorblocks/Y.png" type="Texture" id=15]
+[ext_resource path="res://Items/Item_BlueBlocks.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Items/Item_CyanBlocks.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Items/Item_RedBlocks.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Items/Item_GreenBlocks.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Item_Select_style.tres" type="StyleBox" id=18]
 [ext_resource path="res://Items/Item_Player.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Sprites/UI/current_selected.png" type="Texture" id=20]
-[ext_resource path="res://TabContainer2.gd" type="Script" id=21]
 [ext_resource path="res://Items/Item_Finish.tscn" type="PackedScene" id=22]
 
 [sub_resource type="DynamicFont" id=1]
@@ -444,11 +444,55 @@ WindowDialog/icons/close = null
 WindowDialog/icons/close_highlight = null
 WindowDialog/styles/panel = null
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 5
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="GDScript" id=5]
+script/source = "extends TabContainer
+#This script remove the ability to toggle editor - only one menu should have the main tabcontainer script attached - otherwise the game never starts
+onready var object_cursor = get_node(\"/root/main/Editor_Object\")
+onready var play_button_label = get_node(\"/root/main/Item_Select/play-button/Label\")
+
+
+
+func _ready():
+	mouse_filter = MOUSE_FILTER_PASS
+	pass 
+
+func _process(delta):
+	var player = get_node(\"/root/main/Level/Player\")
+	
+	if player != null:
+		play_button_label.set_text(\"Press Enter to Play\")
+		if Global.playing:
+			visible = false
+			object_cursor.hide()
+			Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+			play_button_label.set_text(\"Press Enter to Stop\")
+		if !Global.playing:
+			visible = true
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			play_button_label.set_text(\"Press Enter to Play\")
+	if player == null:
+		play_button_label.set_text(\"You Need a Player to Start\")
+		if Input.is_action_just_pressed(\"exit\"):
+			get_tree().quit()
+	pass
+	
+func _on_TabContainer_mouse_entered():
+	object_cursor.can_place = false
+	object_cursor.hide()
+	pass # Replace with function body.
+
+
+func _on_TabContainer_mouse_exited():
+	object_cursor.can_place = true
+	object_cursor.show()
+	pass # Replace with function body.
+"
+
+[sub_resource type="DynamicFont" id=4]
 size = 8
 font_data = ExtResource( 7 )
 
@@ -460,13 +504,13 @@ anchor_left = -0.00107286
 anchor_top = -0.00656471
 anchor_right = -0.00107286
 anchor_bottom = -0.00656471
-margin_left = 357.03
-margin_top = 374.151
-margin_right = 613.03
-margin_bottom = 418.151
+margin_left = 278.643
+margin_top = 371.323
+margin_right = 318.643
+margin_bottom = 416.323
 rect_scale = Vector2( 2, 2 )
 theme = SubResource( 2 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_bg = Color( 0, 0, 0, 1 )
 custom_colors/font_color_fg = Color( 0, 0, 0, 1 )
 tabs_visible = false
@@ -500,12 +544,12 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Tilemap/Tiles/ScrollContainer"]
-margin_right = 248.0
+margin_right = 32.0
 margin_bottom = 32.0
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer"]
-margin_right = 248.0
+margin_right = 32.0
 margin_bottom = 32.0
 alignment = 1
 
@@ -517,83 +561,113 @@ texture = ExtResource( 8 )
 this_scene = ExtResource( 9 )
 tile = true
 
-[node name="Item_Tile_1" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 36.0
-margin_right = 68.0
-margin_bottom = 32.0
-rect_scale = Vector2( 1, 1 )
-texture = ExtResource( 14 )
-this_scene = ExtResource( 9 )
-tile = true
-tile_id = 1
+[node name="ColorBlocks" type="TabContainer" parent="."]
+anchor_left = -0.00107286
+anchor_top = -0.00656471
+anchor_right = -0.00107286
+anchor_bottom = -0.00656471
+margin_left = 369.132
+margin_top = 371.151
+margin_right = 592.132
+margin_bottom = 416.151
+rect_scale = Vector2( 2, 2 )
+theme = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_bg = Color( 0, 0, 0, 1 )
+custom_colors/font_color_fg = Color( 0, 0, 0, 1 )
+tabs_visible = false
+drag_to_rearrange_enabled = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
 
-[node name="Item_Tile_2" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 72.0
-margin_right = 104.0
-margin_bottom = 32.0
-rect_scale = Vector2( 1, 1 )
-texture = ExtResource( 13 )
-this_scene = ExtResource( 9 )
-tile = true
-tile_id = 2
+[node name="Colors" type="Tabs" parent="ColorBlocks"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 8.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Item_Tile_3" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 108.0
-margin_right = 140.0
-margin_bottom = 32.0
-rect_scale = Vector2( 1, 1 )
-texture = ExtResource( 11 )
-this_scene = ExtResource( 9 )
-tile = true
-tile_id = 3
+[node name="ScrollContainer" type="ScrollContainer" parent="ColorBlocks/Colors"]
+anchor_left = 0.00125195
+anchor_right = 1.00125
+anchor_bottom = 1.0
+scroll_horizontal_enabled = false
+scroll_vertical_enabled = false
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Item_Tile_4" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 144.0
-margin_right = 176.0
-margin_bottom = 32.0
-rect_scale = Vector2( 1, 1 )
-texture = ExtResource( 12 )
-this_scene = ExtResource( 9 )
-tile = true
-tile_id = 4
-
-[node name="Item_Tile_5" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 180.0
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorBlocks/Colors/ScrollContainer"]
 margin_right = 212.0
 margin_bottom = 32.0
-rect_scale = Vector2( 1, 1 )
-texture = ExtResource( 10 )
-this_scene = ExtResource( 9 )
-tile = true
-tile_id = 5
+alignment = 1
 
-[node name="Item_Tile_6" parent="Tilemap/Tiles/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 216.0
-margin_right = 248.0
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer"]
+margin_right = 212.0
 margin_bottom = 32.0
-rect_scale = Vector2( 1, 1 )
-texture = ExtResource( 15 )
-this_scene = ExtResource( 9 )
-tile = true
-tile_id = 6
+alignment = 1
+
+[node name="Item_RedBlocks" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 12 )]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 32.0
+margin_bottom = 32.0
+
+[node name="Item_GreenBlocks" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 13 )]
+margin_left = 36.0
+margin_top = 0.0
+margin_right = 68.0
+margin_bottom = 32.0
+
+[node name="Item_BlueBlocks" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 10 )]
+margin_left = 72.0
+margin_top = 0.0
+margin_right = 104.0
+margin_bottom = 32.0
+
+[node name="Item_CyanBlocks" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 11 )]
+margin_left = 108.0
+margin_top = 0.0
+margin_right = 140.0
+margin_bottom = 32.0
+
+[node name="Item_MagentaBlocks" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 5 )]
+margin_left = 144.0
+margin_top = 0.0
+margin_right = 176.0
+margin_bottom = 32.0
+
+[node name="Item_YellowBlocks" parent="ColorBlocks/Colors/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 4 )]
+margin_left = 180.0
+margin_top = 0.0
+margin_right = 212.0
+margin_bottom = 32.0
 
 [node name="Player" type="TabContainer" parent="."]
 anchor_left = -0.00107286
 anchor_top = -0.00656471
 anchor_right = -0.00107286
 anchor_bottom = -0.00656471
-margin_left = 180.03
-margin_top = 373.151
-margin_right = 223.03
-margin_bottom = 418.151
+margin_left = 183.524
+margin_top = 371.03
+margin_right = 226.524
+margin_bottom = 416.03
 rect_scale = Vector2( 2, 2 )
 theme = SubResource( 2 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_bg = Color( 0, 0, 0, 1 )
 custom_colors/font_color_fg = Color( 0, 0, 0, 1 )
 tabs_visible = false
 drag_to_rearrange_enabled = true
-script = ExtResource( 21 )
+script = SubResource( 5 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -642,18 +716,18 @@ anchor_left = -0.00107286
 anchor_top = -0.00656471
 anchor_right = -0.00107286
 anchor_bottom = -0.00656471
-margin_left = 272.03
-margin_top = 373.151
-margin_right = 311.03
-margin_bottom = 418.151
+margin_left = 831.576
+margin_top = 371.26
+margin_right = 870.576
+margin_bottom = 416.26
 rect_scale = Vector2( 2, 2 )
 theme = SubResource( 2 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color_bg = Color( 0, 0, 0, 1 )
 custom_colors/font_color_fg = Color( 0, 0, 0, 1 )
 tabs_visible = false
 drag_to_rearrange_enabled = true
-script = ExtResource( 21 )
+script = SubResource( 5 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -713,7 +787,7 @@ __meta__ = {
 [node name="Label" type="Label" parent="selected_item"]
 margin_right = 64.0
 margin_bottom = 14.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 text = "Current"
 align = 1
 valign = 1
@@ -732,6 +806,8 @@ scale = Vector2( 3, 3 )
 texture = ExtResource( 20 )
 [connection signal="mouse_entered" from="Tilemap" to="Tilemap" method="_on_TabContainer_mouse_entered"]
 [connection signal="mouse_exited" from="Tilemap" to="Tilemap" method="_on_TabContainer_mouse_exited"]
+[connection signal="mouse_entered" from="ColorBlocks" to="ColorBlocks" method="_on_TabContainer_mouse_entered"]
+[connection signal="mouse_exited" from="ColorBlocks" to="ColorBlocks" method="_on_TabContainer_mouse_exited"]
 [connection signal="mouse_entered" from="Player" to="Player" method="_on_TabContainer_mouse_entered"]
 [connection signal="mouse_exited" from="Player" to="Player" method="_on_TabContainer_mouse_exited"]
 [connection signal="mouse_entered" from="Goal" to="Goal" method="_on_TabContainer_mouse_entered"]

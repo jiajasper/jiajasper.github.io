@@ -13,7 +13,7 @@ func _process(delta):
 	var player = get_node("/root/main/Level/Player")
 	
 	if player != null:
-		play_button_label.set_text("Press Enter to Play")
+		play_button_label.set_text("Press Enter to Play. \n\n Left Click to Select and Place. \n\n Right Click to Delete")
 		if (!Global.filesystem_shown):
 			if Input.is_action_just_pressed("toggle_editor"):
 				Global.playing = !Global.playing
@@ -25,11 +25,11 @@ func _process(delta):
 			visible = false
 			object_cursor.hide()
 			Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-			play_button_label.set_text("Press Enter to Stop")
+			play_button_label.set_text("Press Enter to Edit")
 		if !Global.playing:
 			visible = true
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			play_button_label.set_text("Press Enter to Play")
+			play_button_label.set_text("Press Enter to Play. \n\n Left Click to Select and Place. \n\n Right Click to Delete")
 			
 	if player == null:
 		play_button_label.set_text("You Need to Place a Player to Start")

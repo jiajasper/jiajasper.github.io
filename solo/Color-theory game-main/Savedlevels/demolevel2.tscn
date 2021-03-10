@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Objects/ColorBlocks/BlueBlocks.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/Players/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/ColorCircles/b.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objects/ColorCircles/g.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/TileMap.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/tile_blocks.tres" type="TileSet" id=13]
+[ext_resource path="res://Objects/ColorCircles/r.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Objects/Finishlines/Finish.tscn" type="PackedScene" id=15]
+
+[node name="Level" type="Node2D"]
+position = Vector2( -2.00568, -1.23427 )
+script = ExtResource( 7 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 13 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 32
+cell_custom_transform = Transform2D( 32, 0, 0, 32, 0, 0 )
+cell_tile_origin = 1
+centered_textures = true
+cell_clip_uv = true
+format = 1
+tile_data = PoolIntArray( 851998, 0, 0, 917520, 0, 0, 917521, 0, 0, 917522, 0, 0, 917523, 0, 0, 917524, 0, 0, 917525, 0, 0, 917526, 0, 0, 917527, 0, 0, 917528, 0, 0, 917529, 0, 0, 917530, 0, 0, 917531, 0, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0 )
+script = ExtResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 587.957, 439.855 )
+
+[node name="Finish" parent="." instance=ExtResource( 15 )]
+position = Vector2( 943.287, 429.937 )
+
+[node name="BlueBlocks" parent="." instance=ExtResource( 1 )]
+position = Vector2( 910.24, 431.343 )
+
+[node name="@BlueBlocks@88" parent="." instance=ExtResource( 1 )]
+position = Vector2( 943.99, 396.187 )
+
+[node name="r" parent="." instance=ExtResource( 14 )]
+position = Vector2( 752.037, 431.343 )
+
+[node name="g" parent="." instance=ExtResource( 5 )]
+position = Vector2( 815.318, 429.937 )
+
+[node name="b" parent="." instance=ExtResource( 4 )]
+position = Vector2( 686.646, 432.047 )
+
+[node name="@b@90" parent="." instance=ExtResource( 4 )]
+position = Vector2( 942.584, 361.734 )

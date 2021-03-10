@@ -35,11 +35,13 @@ func _process(delta):
 	
 	if Input.is_action_pressed("save"):
 		Global.filesystem_shown = true
+		Global.playing = false
 		do_save = true
 		popup.mode = 4
-		popup.show()		
+		popup.show()	
 	if Input.is_action_pressed("load"):
 		Global.filesystem_shown = true
+		Global.playing = false
 		do_save = true
 		popup.mode = 0
 		popup.show()			

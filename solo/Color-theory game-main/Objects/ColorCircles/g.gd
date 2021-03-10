@@ -31,6 +31,7 @@ func _process(delta):
 	else:
 		global_position = start_pos
 		self.visible = true
+		self.monitoring = true
 	pass
 
 
@@ -65,5 +66,3 @@ func _on_g_body_entered(body):
 	else:
 		pass
 
-func _on_g_body_exited(body):
-	pass # Replace with function body.

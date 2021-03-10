@@ -31,6 +31,7 @@ func _process(delta):
 	else:
 		global_position = start_pos
 		self.visible = true
+		self.monitoring = true
 	pass
 
 

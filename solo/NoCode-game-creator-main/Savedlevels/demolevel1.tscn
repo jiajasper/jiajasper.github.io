@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://fonts/font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Objects/ColorBlocks/BlueBlocks.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/Players/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objects/ColorCircles/b.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Objects/ColorBlocks/RedBlocks.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/TileMap.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/tile_blocks.tres" type="TileSet" id=12]
+[ext_resource path="res://Objects/Finishlines/Finish.tscn" type="PackedScene" id=13]
+
+[node name="Level" type="Node2D"]
+position = Vector2( -2.00568, -1.23427 )
+script = ExtResource( 7 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 12 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 32
+cell_custom_transform = Transform2D( 32, 0, 0, 32, 0, 0 )
+cell_tile_origin = 1
+centered_textures = true
+cell_clip_uv = true
+format = 1
+tile_data = PoolIntArray( 851983, 0, 0, 851984, 0, 0, 851985, 0, 0, 851986, 0, 0, 851991, 0, 0, 851992, 0, 0, 851993, 0, 0, 851994, 0, 0, 851995, 0, 0, 917522, 0, 0, 917523, 0, 0, 917524, 0, 0, 917525, 0, 0, 917526, 0, 0 )
+script = ExtResource( 10 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 494.693, 402.515 )
+
+[node name="b" parent="." instance=ExtResource( 5 )]
+position = Vector2( 688.052, 396.187 )
+
+[node name="Finish" parent="." instance=ExtResource( 13 )]
+position = Vector2( 880.005, 398.297 )
+
+[node name="RedBlocks" parent="." instance=ExtResource( 6 )]
+position = Vector2( 623.365, 433.453 )
+
+[node name="@RedBlocks@92" parent="." instance=ExtResource( 6 )]
+position = Vector2( 656.412, 434.859 )
+
+[node name="BlueBlocks" parent="." instance=ExtResource( 2 )]
+position = Vector2( 689.459, 436.265 )
+
+[node name="@BlueBlocks@93" parent="." instance=ExtResource( 2 )]
+position = Vector2( 721.099, 435.562 )
+
+[node name="MenuButton" type="MenuButton" parent="."]
+margin_left = 33.0
+margin_top = 23.0
+margin_right = 93.0
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Return to Home Screen"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MenuButton" to="." method="_on_MenuButton_pressed"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Objects/Finishlines/Finish.gd" type="Script" id=1]
+[ext_resource path="res://Objects/Entity.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprites/Objects/finish_line.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.8075, 13.2629 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "Finish",
+"speed": 5.0
+} ]
+
+[node name="Finish" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" parent="." index="1"]
+frames = SubResource( 5 )
+animation = "Finish"
+frame = 2
+playing = true
+[connection signal="body_entered" from="." to="." method="_on_Finish_body_entered"]
+[connection signal="mouse_entered" from="." to="." method="_on_Finish_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Finish_mouse_exited"]
